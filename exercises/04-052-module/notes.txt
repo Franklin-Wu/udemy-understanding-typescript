@@ -1,0 +1,10 @@
+npm init
+npm install lite-server
+edit package.json:
+    Add to "scripts":
+        "start": "lite-server"
+tsc --init
+shell 1:
+    npm start
+shell 2:
+    tsc --watch
