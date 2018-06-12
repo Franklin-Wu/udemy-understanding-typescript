@@ -1,19 +1,14 @@
-"use strict";
 // Exercise 1
 // expected: 20
 // const, arrow functions
-var double = function (value) {
-    return value * 2;
-};
+var double = function (value) { return value * 2; };
 console.log(double(10));
 // Exercise 2
 // expected: Hello, Max
 // expected: Hello, Anna
 // const, default parameters, arrow functions
 var greet = function (name) {
-    if (name === undefined) {
-        name = "Max";
-    }
+    if (name === void 0) { name = 'Max'; }
     console.log("Hello, " + name);
 };
 greet();

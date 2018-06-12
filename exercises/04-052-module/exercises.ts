@@ -1,17 +1,14 @@
 // Exercise 1
 // expected: 20
 // const, arrow functions
-const double: (arg1: number) => number = function(value: number) {
-    return value * 2;
-};  
+const double: (arg1: number) => number = (value: number) => value * 2;
 console.log(double(10));
 
 // Exercise 2
 // expected: Hello, Max
 // expected: Hello, Anna
 // const, default parameters, arrow functions
-const greet: (arg1?: string) => void = function (name?: string) {
-    if (name === undefined) { name = "Max"; }
+const greet: (arg1?: string) => void = function (name: string = 'Max') {
     console.log("Hello, " + name);
 };
 greet();
