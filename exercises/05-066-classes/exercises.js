@@ -14,8 +14,8 @@ var __extends = (this && this.__extends) || (function () {
 // expected: 10
 var Car = /** @class */ (function () {
     function Car(name) {
-        this.name = name;
         this.acceleration = 0;
+        this.name = name;
     }
     Car.prototype.honk = function () {
         console.log("Toooooooooot!");

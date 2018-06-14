@@ -4,10 +4,9 @@
 // expected: 10
 class Car {
     private name: string;
-    acceleration: number;
+    acceleration: number = 0;
     constructor(name: string) {
         this.name = name;
-        this.acceleration = 0;
     }
     honk(): void {
         console.log("Toooooooooot!");
