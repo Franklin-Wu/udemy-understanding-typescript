@@ -18,7 +18,7 @@ class MyMap {
     // should output key-value pairs
     printMap() {
         for (let key in this.dictionary) {
-            console.log(key + ': ' + this.getItem(key));
+            console.log(key + ': ' + this.dictionary[key]);
         }
     }
 }
